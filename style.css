@@ -12,6 +12,7 @@ body {
 
 .navbar-brand img {
   height: 2rem;
+  transition: 0.3s ease;
 }
 
 .navbar-brand img:hover {
