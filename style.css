@@ -84,6 +84,8 @@ body {
   display: block;
   width: 80%;
   max-width: 700px;
+  max-height: 80%;
+  object-fit: cover;
 }
 
 /* Caption of Modal Image */
