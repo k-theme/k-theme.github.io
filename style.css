@@ -12,14 +12,14 @@
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1rem;
-  border-color: #1EBBA3;
-  background-color: #1EBBA3;
+  border-color: #5327AB;
+  background-color: #5327AB;
   color: white;
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  border-color: #189582;
-  background-color: #189582;
+  border-color: #432087;
+  background-color: #432087;
   color: white;
 }
 
