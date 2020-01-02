@@ -87,7 +87,7 @@ body {
 }
 
 /* Caption of Modal Image */
-#caption, #caption2, #caption3 {
+#caption {
   margin: auto;
   display: block;
   width: 80%;
