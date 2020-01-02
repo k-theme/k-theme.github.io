@@ -128,7 +128,23 @@ body {
 }
 
 .close:hover,
-.close:focus, close2:hover, close2:focus, close3:hover, close3:focus {
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.close3:hover,
+.close3:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
