@@ -25,14 +25,32 @@
     <div id="course" class="row justify-content-center">
       <div class="col-md-8 text-center">
         <p class="lead">Full page:</p>
-        <img src="https://media.discordapp.net/attachments/662403153551032328/662403165018128386/6r7v3r6oH8Py704CqNlqT0AAAAAElFTkSuQmCC.png?width=400&height=178">
+        <img class="img" id="myImg" alt="Full page." src="https://media.discordapp.net/attachments/662403153551032328/662403165018128386/6r7v3r6oH8Py704CqNlqT0AAAAAElFTkSuQmCC.png?width=400&height=178">
         <p class="lead">When you press on the search icon you can actually search.</p>
-        <img src="https://media.discordapp.net/attachments/662403153551032328/662403492870225969/RkK0maCKnEAAAAAElFTkSuQmCC.png?width=400&height=297">
+        <img class="img" id="myImg2" alt="When you press on the search icon you can actually search." src="https://media.discordapp.net/attachments/662403153551032328/662403492870225969/RkK0maCKnEAAAAAElFTkSuQmCC.png?width=400&height=297">
         <p class="lead">A member list thats hides and shows on hover.</p>
-        <img src="https://media.discordapp.net/attachments/662403153551032328/662403672340430861/wFABzGJmj7uFQAAAABJRU5ErkJggg.png?width=135&height=300">
+        <img class="img" id="myImg3" alt="A member list that hides and shows on hover." src="https://media.discordapp.net/attachments/662403153551032328/662403672340430861/wFABzGJmj7uFQAAAABJRU5ErkJggg.png?width=135&height=300">
         <p class="lead">And more...</p>
       </div>
     </div>
+		
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+		
+		<div id="myModal2" class="modal">
+			<span class="close2">&times;</span>
+			<img class="modal-content" id="img02">
+			<div id="caption2"></div>
+		</div>
+		
+		<div id="myModal3" class="modal">
+			<span class="close3">&times;</span>
+			<img class="modal-content" id="img03">
+			<div id="caption3"></div>
+		</div>
 
 
     <!--- Script Source Files -->
@@ -42,6 +60,61 @@
   </body>
 </html>
 <script>
+	modal = document.getElementById("myModal");
+	modal2 = document.getElementById("myModal2");
+	modal3 = document.getElementById("myModal3");
+	
+	var img = document.getElementById("myImg");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		captionText.innerHTML = this.alt;
+	}
+	
+	var img2 = document.getElementById("myImg2");
+	var modalImg2 = document.getElementById("img02");
+	var captionText2 = document.getElementById("caption2");
+	img2.onclick = function(){
+		modal2.style.display = "block";
+		modalImg2.src = this.src;
+		captionText2.innerHTML = this.alt;
+	}
+	
+	var img3 = document.getElementById("myImg3");
+	var modalImg3 = document.getElementById("img03");
+	var captionText3 = document.getElementById("caption3");
+	img3.onclick = function(){
+		modal3.style.display = "block";
+		modalImg3.src = this.src;
+		captionText3.innerHTML = this.alt;
+	}
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+		modal.style.display = "none";
+	}
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close2")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+		modal2.style.display = "none";
+	}
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close3")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+		modal3.style.display = "none";
+	}
+	
 	function scroll(){
 	  document.getElementById('course').scrollIntoView({behavior: 'smooth'});
 	}
